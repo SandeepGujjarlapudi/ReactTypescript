@@ -1,21 +1,3 @@
-// import './App.css'
-// import TableDetails from './components/TableDetails'
-
-// function App() {
-  
-
-//   return (
-//     <>
-//     <div>
-//       <h1> Indian Citizen Details </h1>
-//       <TableDetails/>
-//     </div>
-    
-//     </>
-//   )
-// }
-
-// export default App
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import TableDetails from "./components/TableDetails";
 import FormInput from "./components/FormInput";
@@ -25,8 +7,6 @@ import FormInput from "./components/FormInput";
 function App() {
   return (
     <Router>
-      
-      {/* <h1 style={{ textAlign: "center", marginTop: 0 }}>Indian Citizen Details</h1> */}
       
       <div>
         <Routes>
