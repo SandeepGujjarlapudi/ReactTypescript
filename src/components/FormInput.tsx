@@ -122,7 +122,7 @@ const FormInput: React.FC = () => {
     
     const savedData = JSON.parse(localStorage.getItem("userFormData") || "[]");
     // const updatedData = [...savedData, formData];
-    const updatedData = Array.isArray(savedData) ? [...savedData, formData] : [formData];
+    const updatedData = Array.isArray(savedData) ? [formData,...savedData ] : [formData];
 
     localStorage.setItem("userFormData", JSON.stringify(updatedData));
 
@@ -150,16 +150,23 @@ const FormInput: React.FC = () => {
   return (
       <div className="card-container">
         <div className="form-container">
-          <h2 style={{ textAlign: "center", marginTop: 0 }}>Fill all the details</h2>
+          <h2 style={{ textAlign: "center", marginTop: 0 , fontSize:"xx-medium"}}>FILL ALL THE DETAILS</h2>
           <form onSubmit={handleSubmit}>
+
             <div className="name">
+
+              <div className="name-container">
             <label>First Name:</label>
             <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} placeholder="Enter First Name" required />
             {errors.firstName && <p style={{ color: "red" }}>{errors.firstName}</p>}
+            </div>
 
+            <div className="name-container">
             <label>Last Name:</label>
             <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} placeholder="Enter Last Name" required />
             {errors.lastName && <p style={{ color: "red" }}>{errors.lastName}</p>}
+            </div>
+
             </div>
 
             <label>Age:</label>

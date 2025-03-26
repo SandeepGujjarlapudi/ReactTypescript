@@ -19,7 +19,7 @@ body {
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background: rgb(186, 179, 186);
+  background: rgb(205, 193, 205);
   color: black;
   font-family: poppins;
 }
@@ -44,10 +44,15 @@ select {
   border-radius: 5px;
 }
 .name{
-  
   display: flex;
-  justify-content: space-around;
-  
+  gap: 13px;
+
+}
+.name-container input {
+  width: 95%;
+}
+.name-container{
+  flex: 1;
 }
 
 button {

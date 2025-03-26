@@ -8,17 +8,29 @@ body {
   align-items: center;
   flex-direction: column;
 }
+/* .searchbar{
+  height: 7vh;
+} */
 .button-container {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 20px;
 }
-
+.container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-top: 5px;
+  font-family: poppins;
+}
 .header {
+  display: flex;
+  justify-content: center;
   text-align: center;
   color: #333;
   margin-bottom: 20px;
   margin-top: 0px;
+
 }
 
 .button-container {
