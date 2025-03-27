@@ -7,7 +7,6 @@ import FormInput from "./components/FormInput";
 function App() {
   return (
     <Router>
-      
       <div>
         <Routes>
           <Route path="/" element={<TableDetails />} />
